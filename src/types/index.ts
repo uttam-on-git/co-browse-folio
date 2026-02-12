@@ -1,15 +1,15 @@
 export type PageSectionType =
-  | "heading"
-  | "paragraph"
-  | "list"
-  | "table"
-  | "form"
-  | "navigation"
-  | "media"
+  | "hero"
+  | "projects"
+  | "about"
+  | "contact"
   | "other";
+
+export type InteractiveElementType = "button" | "link" | "input" | "other";
 
 export interface PageElement {
   id: string;
+  type?: InteractiveElementType;
   tagName: string;
   text?: string;
   selector?: string;
@@ -19,8 +19,10 @@ export interface PageElement {
 export interface PageSection {
   id: string;
   type: PageSectionType;
+  heading?: string;
   text: string;
   elements: PageElement[];
+  interactiveElements?: PageElement[];
 }
 
 export interface PageContent {
