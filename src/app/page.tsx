@@ -7,10 +7,9 @@ import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
-import type { ChatMessage, ToolCall } from "@/types";
 
 function PortfolioPageContent() {
-  const { messages, isLoading, isExecutingAction, sendMessage, confirmToolCall } =
+  const { messages, isLoading, isExecutingAction, sendMessage, clearChat } =
     useChatContext();
 
   useEffect(() => {
@@ -49,12 +48,7 @@ function PortfolioPageContent() {
         messages={messages}
         isLoading={isLoading}
         isExecutingAction={isExecutingAction}
-        onConfirmToolCall={(toolCall: ToolCall) =>
-          confirmToolCall(toolCall.id, true)
-        }
-        onCancelToolCall={(toolCall: ToolCall) =>
-          confirmToolCall(toolCall.id, false)
-        }
+        onResetChat={clearChat}
       />
     </main>
   );
