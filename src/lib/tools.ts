@@ -18,7 +18,6 @@ export const TOOLS: ToolDefinition[] = [
         },
       },
       required: ["sectionId", "behavior"],
-      additionalProperties: false,
     },
   },
   {
@@ -42,7 +41,6 @@ export const TOOLS: ToolDefinition[] = [
         },
       },
       required: ["elementId", "durationSeconds"],
-      additionalProperties: false,
     },
   },
   {
@@ -61,7 +59,6 @@ export const TOOLS: ToolDefinition[] = [
         },
       },
       required: ["elementId"],
-      additionalProperties: false,
     },
   },
   {
@@ -80,7 +77,6 @@ export const TOOLS: ToolDefinition[] = [
         },
       },
       required: ["inputId", "value"],
-      additionalProperties: false,
     },
   },
   {
@@ -95,7 +91,6 @@ export const TOOLS: ToolDefinition[] = [
         },
       },
       required: ["elementId"],
-      additionalProperties: false,
     },
   },
 ];
