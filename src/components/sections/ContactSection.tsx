@@ -1,4 +1,13 @@
-import { Mail, MessageSquare, Send, UserRound } from "lucide-react";
+import {
+  FileText,
+  Github,
+  Linkedin,
+  Mail,
+  MessageSquare,
+  Send,
+  Twitter,
+  UserRound,
+} from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -15,12 +24,51 @@ export default function ContactSection() {
             Contact
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-            Let&apos;s Work Together
+            Let&apos;s Connect
           </h2>
           <p className="max-w-2xl text-zinc-600">
-            Have a project in mind? Share a few details and I&apos;ll get back
-            to you soon.
+            I&apos;m actively looking for my first full-time break. If you think
+            I can help your team, send a message or reach me through the links
+            below.
           </p>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <a
+              href="https://github.com/uttam-on-git"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-300 bg-zinc-50 px-3 py-1.5 font-medium text-zinc-700 hover:bg-zinc-100"
+            >
+              <Github className="h-4 w-4" />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/uttam-in/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-300 bg-zinc-50 px-3 py-1.5 font-medium text-zinc-700 hover:bg-zinc-100"
+            >
+              <Linkedin className="h-4 w-4" />
+              LinkedIn
+            </a>
+            <a
+              href="https://x.com/forgeweb2"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-300 bg-zinc-50 px-3 py-1.5 font-medium text-zinc-700 hover:bg-zinc-100"
+            >
+              <Twitter className="h-4 w-4" />
+              X
+            </a>
+            <a
+              href="https://www.dropbox.com/scl/fi/i75h447di27cqbcb4six1/romendra-uttam-v1.pdf?rlkey=ga13n5d4my1tsqixhoutbl6zr&e=1&st=slc7xyru&dl=0"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-300 bg-zinc-50 px-3 py-1.5 font-medium text-zinc-700 hover:bg-zinc-100"
+            >
+              <FileText className="h-4 w-4" />
+              Resume
+            </a>
+          </div>
         </div>
 
         <form
@@ -56,7 +104,7 @@ export default function ContactSection() {
               id="contact-email"
               name="email"
               type="email"
-              placeholder="you@company.com"
+              placeholder="you@company.com (or write to romendrauttam@gmail.com)"
               className="w-full rounded-xl border border-zinc-300 bg-white px-4 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-zinc-400 focus:ring-2 focus:ring-zinc-200"
             />
           </div>

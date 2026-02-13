@@ -10,28 +10,28 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "InsightBoard Analytics",
+    title: "Cesium Resource Explorer",
     description:
-      "Built a real-time product analytics dashboard with role-based access, custom reports, and anomaly alerts for growth teams.",
-    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Redis"],
-    demoUrl: "https://example.com/insightboard",
-    repoUrl: "https://github.com/example/insightboard",
+      "A deep dive into 3D geospatial visuals, exploring the world from the comfort of a browser.",
+    techStack: ["React", "TypeScript", "CesiumJS"],
+    demoUrl: "https://cesium-resource-explorer.vercel.app/",
+    repoUrl: "https://github.com/uttam-on-git/cesium-resource-explorer",
   },
   {
-    title: "FlowOps Automations",
+    title: "Acta",
     description:
-      "Developed a workflow orchestration tool that integrates internal APIs and third-party systems to automate repetitive operations.",
-    techStack: ["React", "Node.js", "Prisma", "RabbitMQ"],
-    demoUrl: "https://example.com/flowops",
-    repoUrl: "https://github.com/example/flowops",
+      "Finance should be private. Acta keeps your ledger local, safe, and beautiful.",
+    techStack: ["Next.js", "Prisma", "PostgreSQL"],
+    demoUrl: "https://acta-beta.vercel.app/",
+    repoUrl: "https://github.com/uttam-on-git/acta",
   },
   {
-    title: "CareBridge Portal",
+    title: "MindfulBrowse",
     description:
-      "Delivered a secure customer portal with messaging, document workflows, and granular audit trails for regulated environments.",
-    techStack: ["Next.js", "Tailwind CSS", "tRPC", "Supabase"],
-    demoUrl: "https://example.com/carebridge",
-    repoUrl: "https://github.com/example/carebridge",
+      "A Chrome extension to help reclaim attention with gentle nudges that keep browsing focused.",
+    techStack: ["JavaScript", "Chrome APIs"],
+    demoUrl: "https://github.com/uttam-on-git/MindfulBrowse",
+    repoUrl: "https://github.com/uttam-on-git/MindfulBrowse",
   },
 ];
 
@@ -53,8 +53,8 @@ export default function ProjectsSection() {
             Selected Work
           </h2>
           <p className="max-w-2xl text-zinc-600">
-            A few products I have designed and shipped across analytics,
-            operations, and customer experience domains.
+            A few projects I built to sharpen product thinking, engineering
+            depth, and real-world shipping discipline.
           </p>
         </div>
 

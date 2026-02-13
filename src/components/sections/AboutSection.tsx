@@ -8,37 +8,41 @@ type ExperienceItem = {
 };
 
 const skills = [
-  "TypeScript",
   "React",
   "Next.js",
+  "Tailwind CSS",
+  "TypeScript",
   "Node.js",
   "PostgreSQL",
-  "System Design",
-  "Cloud Architecture",
-  "Product Strategy",
+  "Prisma",
+  "REST APIs",
+  "Git",
+  "Docker",
+  "Linux",
+  "CesiumJS",
 ];
 
 const experience: ExperienceItem[] = [
   {
-    role: "Senior Full-Stack Engineer",
-    company: "Northstar Labs",
-    period: "2023 - Present",
+    role: "Builder (Self-driven Projects)",
+    company: "Independent",
+    period: "2025 - Present",
     summary:
-      "Leading architecture decisions and mentoring engineers while building internal platforms used by product and operations teams.",
+      "Shipping end-to-end products across frontend and backend while iterating quickly on UX, reliability, and developer experience.",
   },
   {
-    role: "Full-Stack Engineer",
-    company: "Atlas Systems",
-    period: "2020 - 2023",
+    role: "Open Source and Public Builds",
+    company: "GitHub",
+    period: "2024 - Present",
     summary:
-      "Shipped customer-facing web apps end-to-end, including frontend architecture, API design, and observability tooling.",
+      "Maintaining public repositories and experiments, with focus on practical tooling, web products, and polished implementations.",
   },
   {
-    role: "Software Engineer",
-    company: "Driftline",
-    period: "2017 - 2020",
+    role: "Learning by Shipping",
+    company: "Hands-on Practice",
+    period: "Ongoing",
     summary:
-      "Built data-heavy interfaces and backend services for reporting, workflow automation, and customer success operations.",
+      "Building real applications from scratch to strengthen system design instincts and production-ready execution habits.",
   },
 ];
 
@@ -60,8 +64,9 @@ export default function AboutSection() {
             Skills and Experience
           </h2>
           <p className="mt-4 max-w-xl text-zinc-600">
-            I work at the intersection of product, engineering, and user
-            experience to deliver software that is maintainable and measurable.
+            I focus on practical, shippable software. My learning style is
+            simple: build real products, test assumptions quickly, and improve
+            based on feedback.
           </p>
 
           <div className="mt-8">

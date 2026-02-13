@@ -13,7 +13,7 @@ function PortfolioPageContent() {
     useChatContext();
 
   useEffect(() => {
-    document.title = "Alex Carter | Full-Stack Engineer Portfolio";
+    document.title = "Romendra | Full-Stack Developer Portfolio";
 
     const upsertMeta = (selector: string, key: "name" | "property", value: string) => {
       let element = document.head.querySelector<HTMLMetaElement>(selector);
@@ -28,12 +28,12 @@ function PortfolioPageContent() {
     upsertMeta(
       'meta[name="description"]',
       "name",
-      "Portfolio of Alex Carter, a senior full-stack engineer building scalable web products.",
+      "Portfolio of Romendra, a full-stack developer shipping real projects and actively seeking a first full-time role.",
     );
     upsertMeta(
       'meta[property="og:title"]',
       "property",
-      "Alex Carter | Full-Stack Engineer Portfolio",
+      "Romendra | Full-Stack Developer Portfolio",
     );
   }, []);
 
